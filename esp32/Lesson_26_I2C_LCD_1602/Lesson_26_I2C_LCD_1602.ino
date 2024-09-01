@@ -20,9 +20,13 @@ void setup() {
   // Print a message on both lines of the LCD.
   lcd.setCursor(2, 0);  //Set cursor to character 2 on line 0
   lcd.print("Hello world!");
-
+  delay(1000);
   lcd.setCursor(2, 1);  //Move cursor to character 2 on line 1
   lcd.print("LCD Tutorial");
+  delay(1000);
+  lcd.scrollDisplayLeft();
+  //lcd.setCursor(1, 0);
+  //lcd.print("Test");
 }
 
 void loop() {
